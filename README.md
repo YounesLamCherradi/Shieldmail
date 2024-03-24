@@ -31,11 +31,13 @@ Ready to dive in? Follow these steps to set up Project Name on your local machin
 📥 Cloning the Project
 
 First, you'll need to clone the repository to create a local copy on your computer. Fire up your terminal (or command prompt) and run the following magical spell 🔮:
+
 `pip install gunicorn`
 
 `git clone https://github.com/yourusername/yourprojectname.git`
 
 `cd yourprojectname`
+
 for windows users with Visual Studio code use the following comamnd to open it i nvisual studio: 
 
 `code .`
