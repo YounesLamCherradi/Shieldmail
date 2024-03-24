@@ -42,7 +42,7 @@ cd yourprojectname
 
 for windows users with Visual Studio code use the following comamnd to open it i nvisual studio: 
 
-`code .`
+```code .```
 
 ## 🌟 Setting Up the Environment 🌈
 
@@ -58,7 +58,7 @@ With a wave of your wand, install all the necessary spells (dependencies) from t
 
 in the visual code terminal enter the following command:
 
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 ## 🛡️ Step 4: Nginx Configuration as a Reverse Proxy 🚀
 
@@ -79,11 +79,11 @@ sudo apt install nginx
 
 Navigate to the mystical lands of Nginx configurations:
 
-`cd /etc/nginx/sites-available/ `
+```cd /etc/nginx/sites-available/ ```
 
 Use your favorite text editor to create a new scroll (file) named after your project:
 
-`sudo nano yourprojectname`
+```sudo nano yourprojectname```
 
 Add the follwoing configuration:
 
@@ -112,11 +112,11 @@ sudo ln -s /etc/nginx/sites-available/yourprojectname /etc/nginx/sites-enabled/
 To check your Nginx configuration is working:
 
 
-`sudo systemctl status nginx`
+```sudo systemctl status nginx```
 
 when makin gchanges, reload and erstart your nginx for the changes to take place:
 
-`sudo systemctl restat nginx`
+```sudo systemctl restat nginx```
 
 ## 🚀 Step 5: Deploying with Gunicorn 🦄
 
@@ -127,14 +127,14 @@ After setting up Nginx as your reverse proxy, it’s time to conjure up Gunicorn
 If you haven't already, install Gunicorn by running the following enchantment in your terminal:
 
 
-`pip install gunicorn`
+```pip install gunicorn```
 
 🌟 Running Your Application with Gunicorn
 
 Navigate to your project’s root directory, where your main Flask file (e.g., app.py) is located. Cast the following spell to awaken Gunicorn and start serving your application:
 
 
-`gunicorn --workers=1 filename:app`
+```sudo gunicorn --workers=1 filename:app```
 
 if your file is app.py, instead of filename you will put app
 
