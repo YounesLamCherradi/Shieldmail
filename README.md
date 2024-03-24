@@ -36,6 +36,8 @@ First, you'll need to clone the repository to create a local copy on your comput
 pip install gunicorn
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
+```
+
 
 
 for windows users with Visual Studio code use the following comamnd to open it i nvisual studio: 
