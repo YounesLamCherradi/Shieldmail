@@ -145,11 +145,23 @@ Securing your website with HTTPS is crucial for protecting user data and boostin
 - `sudo` access on your server.
 
 ### Installing Certbot
-
-1. **Update your package manager** (use `apt` for Debian/Ubuntu-based distributions):
-
-   ```bash
+   ```
    sudo apt update
+   sudo apt upgrade
+   sudo apt install certbot python3-certbot-nginx
+```
+
+### Obtaining and Installing an SSL Certificate
+
+
+`sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com`
+
+Ensure to replace yourdomain.com and www.yourdomain.com with your actual domain and any subdomains you wish to secure.
+
+
+
+   
+
 
 
 
