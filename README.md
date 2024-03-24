@@ -28,7 +28,7 @@ Shieldmail is built on a diverse and dynamic technology stack, promising a respo
 
 Ready to dive in? Follow these steps to set up Project Name on your local machine for development and testing. We welcome code warriors 🗡️, wizards of the web 🧙‍♂️, and ninjas of new creations 🥷 to contribute to our quest for a spam-free realm!
 
-# 📥 Cloning the Project
+##📥 Cloning the Project
 
 First, you'll need to clone the repository to create a local copy on your computer. Fire up your terminal (or command prompt) and run the following magical spell 🔮:
 
