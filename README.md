@@ -158,7 +158,9 @@ Securing your website with HTTPS is crucial for protecting user data and boostin
 ### Obtaining and Installing an SSL Certificate
 
 
-```sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com```
+```
+sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+```
 
 Ensure to replace yourdomain.com and www.yourdomain.com with your actual domain and any subdomains you wish to secure.
 
