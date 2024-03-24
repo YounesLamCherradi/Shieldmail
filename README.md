@@ -119,7 +119,7 @@ when makin gchanges, reload and erstart your nginx for the changes to take place
 
 After setting up Nginx as your reverse proxy, it’s time to conjure up Gunicorn, the Green Unicorn, to serve your Flask application to the world with grace and strength. Follow these steps to summon and configure Gunicorn.
 
-📦 Install Gunicorn
+### 📦 Install Gunicorn
 
 If you haven't already, install Gunicorn by running the following enchantment in your terminal:
 
