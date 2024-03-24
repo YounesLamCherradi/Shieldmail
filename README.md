@@ -9,9 +9,13 @@ In the whirlwind of digital data, Project Name emerges as a guardian angel, dist
 Shieldmail is a powerhouse 🏋️‍♂at:
 
 🛡️ Swiftly catching and filtering spam content 🗑.
+
 🔗 Hunting down malicious links to shield users.
+
 😃 Harnessing emoticons for rich sentiment analysis.
+
 🌍 Breaking language barriers with multilingual support.
+
 Embark on a journey with us to navigate the digital universe securely, one byte at a time.
 
 🛠️ Technologies Used 🛠️
