@@ -2,9 +2,10 @@
 🎉 Welcome to Project Name! 🌐🔍
 
 📜 Introduction
-In the whirlwind 🌪️ of digital data, Project Name emerges as a guardian angel 😇, distinguishing genuine content 📄 from spam 🚫 and malicious links 🔗 with eagle-eyed precision 🎯. Our Flask application 🧪, powered by the latest web technologies 🛠️, promises a digital fortress 🏰, providing real-time detection 🚨 and insightful analysis 🕵️‍♂️ to uphold online safety 🛡️.
+In the whirlwind of digital data, Project Name emerges as a guardian angel, distinguishing genuine content 📄 from spam 🚫 and malicious links 🔗 with eagle-eyed precision 🎯. Our Flask application, powered by the latest web technologies , promises a digital fortress, providing real-time detection 🚨 and insightful analysis 🕵️‍♂️ to uphold online safety 🛡️.
 
 🚀 What Does Project Name Do? 🚀
+
 Project Name is a powerhouse 🏋️‍♂️ at:
 
 🛡️ Swiftly catching and filtering spam content 🗑️.
@@ -14,6 +15,7 @@ Project Name is a powerhouse 🏋️‍♂️ at:
 Embark on a journey 🧭 with us to navigate the digital universe 🌌 securely, one byte 🧬 at a time.
 
 🛠️ Technologies Used 🛠️
+
 The backbone of Project Name is its diverse and dynamic technology stack, promising a responsive, intuitive, and resilient application:
 
 Flask: Our nimble web framework 🕸️, providing the agility 🤸 needed for quick deployments 🚀 and scalable growth 📈.
@@ -21,7 +23,9 @@ Python: The scripting powerhouse 🐍 driving our application, enabling complex 
 JavaScript & AJAX: The dynamic duo 🎭 behind our interactive user interfaces, orchestrating real-time communication 🗨️ without the need for page reloads ⏭️.
 Nginx & Gunicorn: Our sturdy serving and execution environment 🏗️, managing loads 🏋️‍♀️ and providing seamless interfacing between web clients and our Flask foundation 🤝.
 APIs: The digital synapses 🧠 of interoperability, empowering our application to interconnect 🌐 with other services and datasets in the expansive web ecosystem 🌳.
+
 🎖️ Why Project Name? 🎖️
+
 Project Name is your trusted sentinel 🪖 in the digital domain, extending:
 
 🛡️ State-of-the-art protection against cyber threats 🚷.
@@ -31,9 +35,11 @@ Project Name is your trusted sentinel 🪖 in the digital domain, extending:
 Get ready to power up 🔋 your digital experience with Project Name. Join us on our quest 🏹 to craft a safer online world 🌍, one link at a time. Let's embark on this adventure together! 🚀🌈👨‍💻👩‍💻
 
 🛠 How to Work with Project Name 🛠
+
 Ready to dive in? Follow these steps to set up Project Name on your local machine for development and testing. We welcome code warriors 🗡️, wizards of the web 🧙‍♂️, and ninjas of new creations 🥷 to contribute to our quest for a spam-free realm!
 
 📥 Cloning the Project
+
 First, you'll need to clone the repository to create a local copy on your computer. Fire up your terminal (or command prompt) and run the following magical spell 🔮:
 
 bash
