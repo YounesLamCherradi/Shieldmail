@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/static/icon.png"/>
+    <link rel="stylesheet" href="/static/History_Page.css" />
+
+    <title>Report History</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" style="font-weight: bold;">ShieldMail</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+    </div>
+    
+
+
+    <div class="container">
+        <h1>Report History</h1>
+        {% for report in reports %}
+        <div class="history-row">
+            <div class="report-detail link-column">
+                <p>Checked Link:</p>
+                <a href="{{ report.malicious_link }}" class="link" target="_blank">{{ report.malicious_link }}</a>
+            </div>
+            <div class="report-detail status-column">
+                <p>Status: {{ report.isMalicious }} </p>
+            </div>
+            <div class="report-detail date-column">
+                <p>Date Checked:</p>
+                <p>{{ report.date_checked }}</p>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+
+    <script>
+        // This script will find all the report rows and apply the animation in sequence
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            const rows = document.querySelectorAll('.history-row');
+            let delay = 0;
+            rows.forEach(row => {
+                row.style.animation = `fadeInUp 0.5s ease forwards ${delay}s`;
+                delay += 0.15; // each row will animate with a delay of 0.15s after the previous one
+            });
+        });
+    </script>
+</body>
+</html>

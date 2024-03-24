@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Profile_Info_Page.css" />
+    <link rel="shortcut icon" type="image/png" href="/static/icon.png"/>
+
+
+    <title>User Profile Information</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" style="font-weight: bold;">ShieldMail</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class="profile-container">
+        <h2 class="profile-header">Profile Information</h2>
+        <div class="profile-info">
+            <!-- The 'user' variable is used here to access the user's attributes -->
+            <div><span>First Name:</span> {{ user['first_name'] if 'email' in user else 'No email provided' }}</div>
+            <div><span>Last Name:</span> {{ user['last_name'] if 'first_name' in user else 'Not provided' }}</div>
+            <div><span>Email:</span> {{ user['email'] if 'last_name' in user else 'Not provided' }}</div>
+            <div><span>Member Since:</span> {{ user['member_since'] if 'member_since' in user else 'Unknown' }}</div>
+            <div><span>Last Login:</span> {{ user['last_login'] if 'last_login' in user else 'Unknown' }}</div>
+        </div>
+    </div>
+    
+
+ 
+
+</div>
+
+</body>
+</html>
