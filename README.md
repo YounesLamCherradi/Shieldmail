@@ -24,19 +24,19 @@ Shieldmail is built on a diverse and dynamic technology stack, promising a respo
 - **Nginx & Gunicorn**: Providing a sturdy serving and execution environment.
 - **APIs**: The digital synapses of interoperability, connecting our app with the expansive web ecosystem.
 
-🛠 How to Work with Project Name 🛠
+# 🛠 How to Work with Shieldmail 🛠
 
 Ready to dive in? Follow these steps to set up Project Name on your local machine for development and testing. We welcome code warriors 🗡️, wizards of the web 🧙‍♂️, and ninjas of new creations 🥷 to contribute to our quest for a spam-free realm!
 
-📥 Cloning the Project
+## 📥 Cloning the Project
 
 First, you'll need to clone the repository to create a local copy on your computer. Fire up your terminal (or command prompt) and run the following magical spell 🔮:
 
-`pip install gunicorn`
+```bash
+pip install gunicorn
+git clone https://github.com/yourusername/yourprojectname.git
+cd yourprojectname
 
-`git clone https://github.com/yourusername/yourprojectname.git`
-
-`cd yourprojectname`
 
 for windows users with Visual Studio code use the following comamnd to open it i nvisual studio: 
 
