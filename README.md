@@ -181,15 +181,15 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 ```
 Ensure to replace yourdomain.com and www.yourdomain.com with your actual domain and any subdomains you wish to secure.
 
-### Edit you Nginx Configuration file of yourproejctname:
+### 🛠️ Edit your Nginx Configuration file of yourprojectname:
 
+```
 server {
     listen 80;
     server_name yourdomain.com www.yourdomain.com;
     # Redirect all HTTP requests to HTTPS
     return 301 https://$server_name$request_uri;
 }
-```
 server {
     # Listen on port 443 for SSL connections
     listen 443 ssl http2;
