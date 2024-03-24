@@ -1,7 +1,7 @@
-🌟 Project Title 🌟
 🎉 Welcome to Project Name! 🌐🔍
 
 📜 Introduction
+
 In the whirlwind of digital data, Project Name emerges as a guardian angel, distinguishing genuine content 📄 from spam 🚫 and malicious links 🔗 with eagle-eyed precision 🎯. Our Flask application, powered by the latest web technologies , promises a digital fortress, providing real-time detection 🚨 and insightful analysis 🕵️‍♂️ to uphold online safety 🛡️.
 
 🚀 What Does Project Name Do? 🚀
