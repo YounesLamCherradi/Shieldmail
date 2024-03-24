@@ -68,9 +68,11 @@ Now that your magical application is bubbling nicely in your cauldron, it's time
 
 First, if Nginx is not already guarding your server, summon it with:
 
-`sudo apt update
+```
+sudo apt update
 sudo apt upgrade
-sudo apt install nginx`
+sudo apt install nginx
+```
 
 
 ## 📜 Crafting the Spell (Configuration)
