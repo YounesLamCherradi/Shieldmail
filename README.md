@@ -1,8 +1,10 @@
-🎉 Welcome to Project Name! 🌐🔍
+# 🌟 Welcome to Shieldmail! 🎉🔒
 
-📜 Introduction
+## 📜 Introduction
 
-In the whirlwind of digital data, Project Name emerges as a guardian angel, distinguishing genuine content from spam and malicious links with eagle-eyed precision. Our Flask application, powered by the latest web technologies , promises a digital fortress, providing real-time detection and insightful analysis 🕵 to uphold online safety 🛡️.
+In the whirlwind of digital data, Shieldmail emerges as a guardian angel 🛡️, distinguishing genuine content from spam and malicious links with eagle-eyed precision 🕵️. Powered by the latest web technologies, our Flask application promises a digital fortress 🏰, providing real-time detection and insightful analysis to uphold online safety.
+
+## 🚀 What Does Shieldmail Do? 🚀
 
 Shieldmail is a powerhouse at:
 
