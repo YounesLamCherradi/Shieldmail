@@ -177,8 +177,41 @@ Securing your website with HTTPS is crucial for protecting user data and boostin
 ```
 sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 ```
-
 Ensure to replace yourdomain.com and www.yourdomain.com with your actual domain and any subdomains you wish to secure.
+
+Edit you Nginx Configuration file of yourproejctname:
+
+server {
+    listen 80;
+    server_name yourdomain.com www.yourdomain.com;
+    # Redirect all HTTP requests to HTTPS
+    return 301 https://$server_name$request_uri;
+}
+```
+server {
+    # Listen on port 443 for SSL connections
+    listen 443 ssl http2;
+    server_name yourdomain.com www.yourdomain.com;
+
+    # Specify the location of the SSL certificate and private key
+    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+
+    # Recommended SSL settings
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
+
+    location / {
+        proxy_pass http://localhost:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
 
 
 
