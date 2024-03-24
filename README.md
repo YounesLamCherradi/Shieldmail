@@ -8,11 +8,11 @@ In the whirlwind of digital data, Project Name emerges as a guardian angel, dist
 
 Shieldmail is a powerhouse 🏋️‍♂at:
 
-🛡️ Swiftly catching and filtering spam content 🗑️.
-🔗 Hunting down malicious links to shield 🛡️ users.
-😃 Harnessing emoticons for rich sentiment analysis 🧐.
-🌍 Breaking language barriers with multilingual support 🗣️🌐.
-Embark on a journey 🧭 with us to navigate the digital universe 🌌 securely, one byte 🧬 at a time.
+🛡️ Swiftly catching and filtering spam content 🗑.
+🔗 Hunting down malicious links to shield users.
+😃 Harnessing emoticons for rich sentiment analysis.
+🌍 Breaking language barriers with multilingual support.
+Embark on a journey with us to navigate the digital universe securely, one byte at a time.
 
 🛠️ Technologies Used 🛠️
 
@@ -32,9 +32,12 @@ Ready to dive in? Follow these steps to set up Project Name on your local machin
 
 First, you'll need to clone the repository to create a local copy on your computer. Fire up your terminal (or command prompt) and run the following magical spell 🔮:
 `pip install gunicorn`
+
 `git clone https://github.com/yourusername/yourprojectname.git`
+
 `cd yourprojectname`
 for windows users with Visual Studio code use the following comamnd to open it i nvisual studio: 
+
 `code .`
 
 
