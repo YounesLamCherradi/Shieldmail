@@ -161,17 +161,19 @@ Securing your website with HTTPS is crucial for protecting user data and boostin
 
 ### Prerequisites:
 - A registered domain name.
-- A web server (e.g., Nginx, Apache) serving your site.
+- A web server for Nginx serving your site.
 - `sudo` access on your server.
 
-### Installing Certbot
+### 🛡️ Installing Certbot
+
    ```
    sudo apt update
    sudo apt upgrade
    sudo apt install certbot python3-certbot-nginx
 ```
 
-### Obtaining and Installing an SSL Certificate
+### 📜 Obtaining and Installing an SSL Certificate
+
 
 
 ```
