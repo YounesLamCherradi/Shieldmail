@@ -63,14 +63,16 @@ in the visual code terminal enter the following command:
 
 🛡️ Step 4: Nginx Configuration as a Reverse Proxy 🚀
 
-Now that your magical application is bubbling nicely in your cauldron, it's time to share it with the world! 🌍 Let's set up Nginx as a protective charm (reverse proxy) to ensure that your app can handle a swarm of visitors without a hitch.
+Now that your magical application is bubbling nicely in your cauldron, it's time to share it with the world! Let's set up Nginx as a protective charm (reverse proxy) to ensure that your app can handle a swarm of visitors without a hitch.
 
 🧙‍♂️ Conjuring Nginx
+
 First, if Nginx is not already guarding your server, summon it with:
 
 `sudo apt update
 sudo apt upgrade
 sudo apt install nginx`
+
 
 📜 Crafting the Spell (Configuration)
 
@@ -99,16 +101,18 @@ server {
 }
 ```
 
+Don't forget to enable your Nginx configuration in sites-enabled:
+
+`sudo ln -s /etc/nginx/sites-available/yourprojectname /etc/nginx/sites-enabled/`
+
+To check your Nginx configuration is working:
 
 
+`sudo systemctl status nginx`
 
-Create a magical link to enable your new configuration:
-bash
-Copy code
-sudo ln -s /etc/nginx/sites-available/yourprojectname /etc/nginx/sites-enabled/
-🌟 Activating the Spell
-Before unleashing the magic, let’s ensure there are no misdrawn runes:
+when makin gchanges, reload and erstart your nginx for the changes to take place:
 
+`sudo systemctl restat nginx`
 
 
 
