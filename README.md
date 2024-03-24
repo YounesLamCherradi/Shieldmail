@@ -16,7 +16,6 @@ Shieldmail is a powerhouse 🏋️‍♂at:
 
 🌍 Breaking language barriers with multilingual support.
 
-Embark on a journey with us to navigate the digital universe securely, one byte at a time.
 
 🛠️ Technologies Used 🛠️
 
