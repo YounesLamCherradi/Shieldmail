@@ -44,15 +44,15 @@ for windows users with Visual Studio code use the following comamnd to open it i
 
 `code .`
 
-🌟 Setting Up the Environment 🌈
+## 🌟 Setting Up the Environment 🌈
 
 Before diving into the magical world of Your Project Name, let's prepare your potion brewing station (a.k.a. development environment) to ensure everything works like a charm!
 
-🧙‍♂️ Step 1: Install Python and pip
+## 🧙‍♂️ Step 1: Install Python and pip
 
 Make sure you have Python on your machine computer). If not, visit Python's official site to download and install it.
 
-📝 Step 3: Install Dependencies
+## 📝 Step 3: Install Dependencies
 
 With a wave of your wand, install all the necessary spells (dependencies) from the requirements.txt scroll:
 
@@ -60,7 +60,7 @@ in the visual code terminal enter the following command:
 
 `pip install -r requirements.txt`
 
-🛡️ Step 4: Nginx Configuration as a Reverse Proxy 🚀
+## 🛡️ Step 4: Nginx Configuration as a Reverse Proxy 🚀
 
 Now that your magical application is bubbling nicely in your cauldron, it's time to share it with the world! Let's set up Nginx as a protective charm (reverse proxy) to ensure that your app can handle a swarm of visitors without a hitch.
 
@@ -73,7 +73,7 @@ sudo apt upgrade
 sudo apt install nginx`
 
 
-📜 Crafting the Spell (Configuration)
+## 📜 Crafting the Spell (Configuration)
 
 Navigate to the mystical lands of Nginx configurations:
 
@@ -113,7 +113,7 @@ when makin gchanges, reload and erstart your nginx for the changes to take place
 
 `sudo systemctl restat nginx`
 
-🚀 Step 5: Deploying with Gunicorn 🦄
+## 🚀 Step 5: Deploying with Gunicorn 🦄
 
 After setting up Nginx as your reverse proxy, it’s time to conjure up Gunicorn, the Green Unicorn, to serve your Flask application to the world with grace and strength. Follow these steps to summon and configure Gunicorn.
 
