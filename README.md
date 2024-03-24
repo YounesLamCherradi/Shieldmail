@@ -32,7 +32,7 @@ Ready to dive in? Follow these steps to set up Project Name on your local machin
 
 First, you'll need to clone the repository to create a local copy on your computer. Fire up your terminal (or command prompt) and run the following magical spell 🔮:
 
-```bash
+```
 pip install gunicorn
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
