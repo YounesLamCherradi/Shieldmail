@@ -114,6 +114,32 @@ when makin gchanges, reload and erstart your nginx for the changes to take place
 
 `sudo systemctl restat nginx`
 
+🚀 Step 5: Deploying with Gunicorn 🦄
+
+After setting up Nginx as your reverse proxy, it’s time to conjure up Gunicorn, the Green Unicorn, to serve your Flask application to the world with grace and strength. Follow these steps to summon and configure Gunicorn.
+
+📦 Install Gunicorn
+
+If you haven't already, install Gunicorn by running the following enchantment in your terminal:
+
+
+`pip install gunicorn`
+
+🌟 Running Your Application with Gunicorn
+Navigate to your project’s root directory, where your main Flask file (e.g., app.py) is located. Cast the following spell to awaken Gunicorn and start serving your application:
+
+
+`gunicorn --workers=1 --bind filename:app`
+
+if your file is app.py, instead of filename you will put app
+
+
+🔒 Secure with HTTPS
+Remember, if you’re using Nginx as a reverse proxy (as detailed in Step 4), configure it to forward requests to Gunicorn. Additionally, secure your application with SSL/TLS using Certbot for HTTPS encryption, keeping your users’ data safe from prying eyes.
+
+🎉 Celebrate!
+Your Flask application is now empowered by Gunicorn and guarded by Nginx, ready to dazzle users with its magical capabilities. Venture forth and spread your app’s charm across the digital realm!
+
 
 
 
