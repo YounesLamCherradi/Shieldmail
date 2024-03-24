@@ -127,6 +127,7 @@ If you haven't already, install Gunicorn by running the following enchantment in
 `pip install gunicorn`
 
 🌟 Running Your Application with Gunicorn
+
 Navigate to your project’s root directory, where your main Flask file (e.g., app.py) is located. Cast the following spell to awaken Gunicorn and start serving your application:
 
 
