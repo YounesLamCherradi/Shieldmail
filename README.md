@@ -61,6 +61,52 @@ in the visual code terminal enter the following command:
 
 `pip install -r requirements.txt`
 
+🛡️ Step 4: Nginx Configuration as a Reverse Proxy 🚀
+
+Now that your magical application is bubbling nicely in your cauldron, it's time to share it with the world! 🌍 Let's set up Nginx as a protective charm (reverse proxy) to ensure that your app can handle a swarm of visitors without a hitch.
+
+🧙‍♂️ Conjuring Nginx
+First, if Nginx is not already guarding your server, summon it with:
+
+`sudo apt update
+sudo apt upgrade
+sudo apt install nginx`
+
+📜 Crafting the Spell (Configuration)
+
+Navigate to the mystical lands of Nginx configurations:
+
+`cd /etc/nginx/sites-available/ `
+
+Use your favorite text editor to create a new scroll (file) named after your project:
+
+`sudo nano yourprojectname`
+
+Add the follwoing configuration:
+
+`server {
+    listen 80;
+    server_name yourdomain.com www.yourdomain.com;
+
+    location / {
+        proxy_pass http://localhost:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}`
+
+
+
+
+Create a magical link to enable your new configuration:
+bash
+Copy code
+sudo ln -s /etc/nginx/sites-available/yourprojectname /etc/nginx/sites-enabled/
+🌟 Activating the Spell
+Before unleashing the magic, let’s ensure there are no misdrawn runes:
+
 
 
 
