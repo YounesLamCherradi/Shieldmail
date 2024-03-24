@@ -16,6 +16,8 @@ Embark on a journey 🧭 with us to navigate the digital universe 🌌 securely,
 
 🛠️ Technologies Used 🛠️
 
+`pip install gunicorn`
+
 The backbone of Project Name is its diverse and dynamic technology stack, promising a responsive, intuitive, and resilient application:
 
 Flask: Our nimble web framework 🕸️, providing the agility 🤸 needed for quick deployments 🚀 and scalable growth 📈.
