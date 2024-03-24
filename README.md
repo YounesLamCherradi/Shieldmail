@@ -36,17 +36,22 @@ First, you'll need to clone the repository to create a local copy on your comput
 pip install gunicorn
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
+```
 
 
-📥 Cloning the Project
+###  📥 Cloning the Project
 First, you'll need to clone the repository to create a local copy on your computer. Fire up your terminal (or command prompt) and run the following magical spell 🔮:
 
+```
 pip install gunicorn
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
+```
 for windows users with Visual Studio code use the following comamnd to open it i nvisual studio:
 
+```
 code .
+```
 
 🌟 Setting Up the Environment 🌈
 Before diving into the magical world of Your Project Name, let's prepare your potion brewing station (a.k.a. development environment) to ensure everything works like a charm!
@@ -59,7 +64,9 @@ With a wave of your wand, install all the necessary spells (dependencies) from t
 
 in the visual code terminal enter the following command:
 
+```
 pip install -r requirements.txt
+```
 
 ## 🛡️ Step 4: Nginx Configuration as a Reverse Proxy 🚀
 Now that your magical application is bubbling nicely in your cauldron, it's time to share it with the world! Let's set up Nginx as a protective charm (reverse proxy) to ensure that your app can handle a swarm of visitors without a hitch.
@@ -68,20 +75,23 @@ Now that your magical application is bubbling nicely in your cauldron, it's time
 
 First, if Nginx is not already guarding your server, summon it with:
 
+```
 sudo apt update
 sudo apt upgrade
 sudo apt install nginx
+```
 📜 Crafting the Spell (Configuration)
-Navigate to the mystical lands of Nginx configurations:
 
-cd /etc/nginx/sites-available/ 
+```
+cd /etc/nginx/sites-available/
+```
 
 Use your favorite text editor to create a new scroll (file) named after your project:
 
 sudo nano yourprojectname
 
 Add the follwoing configuration:
-
+```
 server {
     listen 80;
     server_name yourdomain.com www.yourdomain.com;
@@ -94,9 +104,12 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+```
 Don't forget to enable your Nginx configuration in sites-enabled:
 
+```
 sudo ln -s /etc/nginx/sites-available/yourprojectname /etc/nginx/sites-enabled/
+```
 
 To check your Nginx configuration is working:
 
@@ -113,11 +126,15 @@ After setting up Nginx as your reverse proxy, it’s time to conjure up Gunicorn
 
 If you haven't already, install Gunicorn by running the following enchantment in your terminal:
 
+```
 pip install gunicorn
+```
 
 🌟 Running Your Application with Gunicorn Navigate to your project’s root directory, where your main Flask file (e.g., app.py) is located. Cast the following spell to awaken Gunicorn and start serving your application:
 
-gunicorn --workers=1 filename:app
+```
+sudo gunicorn --workers=1 filename:app
+```
 
 if your file is app.py, instead of filename you will put app
 
