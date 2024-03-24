@@ -104,7 +104,10 @@ server {
 
 Don't forget to enable your Nginx configuration in sites-enabled:
 
-`sudo ln -s /etc/nginx/sites-available/yourprojectname /etc/nginx/sites-enabled/`
+```
+sudo ln -s /etc/nginx/sites-available/yourprojectname /etc/nginx/sites-enabled/
+```
+
 
 To check your Nginx configuration is working:
 
