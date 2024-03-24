@@ -75,7 +75,7 @@ sudo apt install nginx
 ```
 
 
-## 📜 Crafting the Spell (Configuration)
+###  📜 Crafting the Spell (Configuration)
 
 Navigate to the mystical lands of Nginx configurations:
 
