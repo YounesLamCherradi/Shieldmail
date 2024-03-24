@@ -20,6 +20,7 @@ Shieldmail is built on a diverse and dynamic technology stack, promising a respo
 - **Flask**: Our nimble web framework for quick deployments and scalable growth.
 - **Python**: The scripting powerhouse, enabling complex operations with graceful simplicity 🎩.
 - **JavaScript & AJAX**: For interactive user interfaces and real-time communication without page reloads.
+- **MongoDB**: Our chosen NoSQL database for storing and managing data flexibly and efficiently, ensuring that every piece of content is analyzed and processed with speed and accuracy 🗃️.
 - **Nginx & Gunicorn**: Providing a sturdy serving and execution environment.
 - **APIs**: The digital synapses of interoperability, connecting our app with the expansive web ecosystem.
 
