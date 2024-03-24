@@ -135,11 +135,22 @@ Navigate to your project’s root directory, where your main Flask file (e.g., a
 if your file is app.py, instead of filename you will put app
 
 
-🔒 Secure with HTTPS
-Remember, if you’re using Nginx as a reverse proxy (as detailed in Step 4), configure it to forward requests to Gunicorn. Additionally, secure your application with SSL/TLS using Certbot for HTTPS encryption, keeping your users’ data safe from prying eyes.
+## 🛡️ Step 6: Securing Your Website with SSL/TLS Certificate 🛡️
 
-🎉 Celebrate!
-Your Flask application is now empowered by Gunicorn and guarded by Nginx, ready to dazzle users with its magical capabilities. Venture forth and spread your app’s charm across the digital realm!
+Securing your website with HTTPS is crucial for protecting user data and boosting your site's credibility and SEO rankings. Let's Encrypt provides free SSL/TLS certificates, easily set up with Certbot.
+
+### Prerequisites:
+- A registered domain name.
+- A web server (e.g., Nginx, Apache) serving your site.
+- `sudo` access on your server.
+
+### Installing Certbot
+
+1. **Update your package manager** (use `apt` for Debian/Ubuntu-based distributions):
+
+   ```bash
+   sudo apt update
+
 
 
 
