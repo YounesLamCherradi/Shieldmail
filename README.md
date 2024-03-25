@@ -182,7 +182,7 @@ server {
 
     # Proxy pass configuration for the Flask application
     location / {
-        proxy_pass http://localhost:5000; # Assuming Flask runs on port 5000
+        proxy_pass http://localhost:8000; # Assuming Gunicorn runs on port 8000
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
