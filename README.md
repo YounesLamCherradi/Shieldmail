@@ -151,6 +151,7 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 
 ### 📜 Adjust the Nginx Configuration to Use SSL
 
+```
 # Redirect HTTP traffic to HTTPS
 server {
     listen 80;
@@ -161,9 +162,6 @@ server {
     return 301 https://$server_name$request_uri;
 }
 
-# HTTPS server block
-
-```
 server {
     # Listen on port 443 for SSL connections
     listen 443 ssl;
