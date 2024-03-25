@@ -138,6 +138,61 @@ sudo gunicorn --workers=1 filename:app
 
 if your file is app.py, instead of filename you will put app
 
-🔒 Secure with HTTPS Remember, if you’re using Nginx as a reverse proxy (as detailed in Step 4), configure it to forward requests to Gunicorn. Additionally, secure your application with SSL/TLS using Certbot for HTTPS encryption, keeping your users’ data safe from prying eyes.
+## 🔒Step 6: Enchanting Your Application with SSL Certificates 🛡️✨
 
-🎉 Celebrate! Your Flask application is now empowered by Gunicorn and guarded by Nginx, ready to dazzle users with its magical capabilities. Venture forth and spread your app’s charm across the digital realm!
+Secure Sockets Layer (SSL) certificates are crucial for protecting your application's data during transfer over the internet. They encrypt the data sent between your server and your users' browsers, ensuring that sensitive information remains confidential and inaccessible to malicious entities. In this step, we'll guide you through the process of obtaining a free SSL certificate from Let's Encrypt and configuring Nginx to use it, adding an extra layer of security to your Shieldmail application.
+
+### 🧙‍♂️ Obtain an SSL Certificate with Certbot
+```
+sudo apt update
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+```
+
+### 📜 Adjust the Nginx Configuration to Use SSL
+
+# Redirect HTTP traffic to HTTPS
+server {
+    listen 80;
+    listen [::]:80;
+    server_name yourdomain.com www.yourdomain.com;
+
+    # Redirect all HTTP requests to HTTPS
+    return 301 https://$server_name$request_uri;
+}
+
+# HTTPS server block
+
+```
+server {
+    # Listen on port 443 for SSL connections
+    listen 443 ssl;
+    listen [::]:443 ssl ipv6only=on;
+
+    server_name yourdomain.com www.yourdomain.com;
+
+    # SSL certificate and key paths (replace with your actual paths provided by Certbot)
+    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+
+    # Include the SSL configuration from Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    # Your project's public directory or root, adjust if necessary
+    root /var/www/yourprojectname;
+
+    # Proxy pass configuration for the Flask application
+    location / {
+        proxy_pass http://localhost:5000; # Assuming Flask runs on port 5000
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Logging
+    access_log /var/log/nginx/yourprojectname_access.log;
+    error_log /var/log/nginx/yourprojectname_error.log;
+}
+```
