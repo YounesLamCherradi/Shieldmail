@@ -29,14 +29,14 @@ from passlib.hash import argon2
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24) 
-client = MongoClient('mongodb+srv://younes:VZt3wNguzosrO4TR@cluster0.nqb3ixv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient('yourdatabase')
 db = client['auth'] 
 collection = db['forma'] 
 collection1= db['malicious_links']
 collection2= db['spam_emails']
 
-app.config['GOOGLE_CLIENT_ID'] = '724735319865-a8j63fv13vfo17pk7ra48ue1dq54rmlr.apps.googleusercontent.com'
-app.config['GOOGLE_CLIENT_SECRET'] = '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'
+app.config['GOOGLE_CLIENT_ID'] = 'googleclient-id'
+app.config['GOOGLE_CLIENT_SECRET'] = 'googleclient-secret'
 
 
 oauth = OAuth(app)
